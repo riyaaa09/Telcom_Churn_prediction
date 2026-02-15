@@ -1,0 +1,11 @@
+customer_id,name,plan_type,region,data_used_gb,calls_made,revenue_inr,complaints_total,complaints_open,tenure,contract_type,monthly_charges,churn,churn_flag
+1001,Asha Mehta,Prepaid,Delhi,5.2,25,180,0,0,12,Month-to-Month,180,Yes,1
+1002,Ravi Kumar,Postpaid,Mumbai,12.5,40,280,2,2,24,One Year,280,No,0
+1003,Sneha Rao,Prepaid,Chennai,7.8,32,210,1,1,8,Month-to-Month,210,Yes,1
+1004,Manoj Singh,Postpaid,Delhi,15.6,55,320,1,1,30,One Year,320,No,0
+1005,Divya Jain,Prepaid,Kolkata,3.4,18,120,1,0,6,Month-to-Month,120,Yes,1
+1006,Aditya Verma,Prepaid,Pune,8.9,35,250,1,0,18,One Year,250,No,0
+1007,Neha Patel,Postpaid,Bengaluru,10.2,42,290,1,0,10,Month-to-Month,290,Yes,1
+1008,Pooja Sharma,Prepaid,Hyderabad,4.6,20,150,1,0,9,Month-to-Month,150,Yes,1
+1009,Rohan Das,Prepaid,Jaipur,6.7,28,200,1,1,20,One Year,200,No,0
+1010,Simran Kaur,Postpaid,Chandigarh,9.1,39,260,1,1,22,Two Year,260,No,0
