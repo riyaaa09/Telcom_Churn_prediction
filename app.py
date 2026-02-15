@@ -1,9 +1,19 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
-# Load model
-model = joblib.load("outputs/model.pkl")
+# Load model using a path relative to this file so wrapper/root runs work
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "outputs" / "model.pkl"
+
+if not MODEL_PATH.exists():
+    st.title("📉 Telecom Churn Prediction")
+    st.error(f"Model file not found: {MODEL_PATH}.\nPlease ensure 'outputs/model.pkl' is present.")
+    st.write("If your model file is located elsewhere, update the path in capstone/app.py.")
+    st.stop()
+
+model = joblib.load(MODEL_PATH)
 
 st.title("📉 Telecom Churn Prediction")
 st.write("Predict whether a customer is likely to churn.")
